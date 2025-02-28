@@ -5,7 +5,9 @@ public class Contacts {
     public void add(String n, int num){
         if(index < names.length){
             names[index] = n;
+            numbers[index] = num;
             index++;
+            System.out.println("Contact is added");
         }
         else{
             System.out.println("Memory is full");
@@ -14,7 +16,7 @@ public class Contacts {
     public String display(){
         String contact = "";
         for(int i = 0; i < names.length; i ++){
-            contact = contact + names[i] + "/n";
+            contact = contact + names[i] + ": " + numbers[i] + "\n";
         }
         return contact;
     }
