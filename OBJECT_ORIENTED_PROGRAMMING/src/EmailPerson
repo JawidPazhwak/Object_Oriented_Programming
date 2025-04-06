@@ -1,0 +1,7 @@
+public class EmailPerson{
+    public EmailPerson(Email e){
+        e.name = name;
+        e.password = password;
+    }
+
+}
